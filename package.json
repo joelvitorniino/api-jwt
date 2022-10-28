@@ -1,7 +1,7 @@
 {
    "name": "api-jwt",
    "version": "0.0.1",
-   "description": "Awesome project developed with TypeORM.",
+   "description": "API JWT",
    "type": "commonjs",
    "devDependencies": {
       "@types/bcryptjs": "^2.4.2",
@@ -28,7 +28,7 @@
       "sequelize": "^6.25.3"
    },
    "scripts": {
-      "start": "ts-node src/index.ts",
-      "typeorm": "typeorm-ts-node-commonjs"
+      "dev": "ts-node src/app.ts",
+      "start": "tsc --build && node dist/app.ts"
    }
 }
