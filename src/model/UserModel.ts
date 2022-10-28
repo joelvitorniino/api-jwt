@@ -7,6 +7,9 @@ export const UserModel = db.define('User', {
         primaryKey: true,
         autoIncrement: true
     },
-    user: DataTypes.STRING,
+    user: {
+        type: DataTypes.STRING,
+        unique: true
+    },
     password: DataTypes.STRING
 });
