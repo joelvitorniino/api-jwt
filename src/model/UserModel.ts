@@ -12,4 +12,7 @@ export const UserModel = db.define('User', {
         unique: true
     },
     password: DataTypes.STRING
+}, {
+    timestamps: false,
+    tableName: 'table_users'
 });
