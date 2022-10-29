@@ -12,5 +12,6 @@ export const AppDataSource = new DataSource({
     database: "tsauth",
     logging: false,
     entities: ["src/app/models/*.ts"],
-    migrations: ["src/app/database/migration/*.ts"]
+    migrations: ["src/app/database/migration/*.ts"],
+    migrationsTableName: "users",
 });
