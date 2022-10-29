@@ -9,10 +9,9 @@ export const AppDataSource = new DataSource({
     port: 3306,
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: "users",
-    synchronize: true,
-    logging: true,
+    database: "tsauth",
+    logging: false,
     entities: [],
     subscribers: [],
     migrations: []
-})
+});
