@@ -6,7 +6,7 @@
   "author": "joelvitorniino <joelprofessor13@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec ts-node src/app.ts",
+    "dev": "npx nodemon --exec ts-node --files src/app.ts",
     "typeorm": "typeorm-ts-node-commonjs",
     "migration": "typeorm-ts-node-commonjs -d ./src/database/data-source.ts migration:run"
   },
