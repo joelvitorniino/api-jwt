@@ -11,7 +11,6 @@ export const AppDataSource = new DataSource({
     password: process.env.MYSQL_PASSWORD,
     database: "tsauth",
     logging: false,
-    entities: [],
-    subscribers: [],
-    migrations: []
+    entities: ["src/app/models/*.ts"],
+    migrations: ["src/app/database/migration/*.ts"]
 });
